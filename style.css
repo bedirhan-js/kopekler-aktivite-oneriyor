@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --text-color: #FFED00;
+    --background-color: #DC0000;
+    --accent-color: #16FF00;
+  }
+
+body {
+   
+     background: var(--background-color);
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h2 {
+    color: #000;
+    
+    margin: 0;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 50em) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--accent-color);
+    max-width: 50rem;
+    width: 100%;
+    box-shadow: 0.65rem 0.65rem 0 var(--text-color);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 0.5rem solid;
+}
+
+.cta img {
+    object-fit: cover;
+    flex: 1 1 300px;
+    outline: 0.5rem solid;
+}
+
+.cta__text-column {
+    padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
+    flex: 1 0 50%;
+    margin-top: 65px;
+}
+
+.cta__text-column>*+* {
+    margin: min(1.5rem, 2.5vw) 0 0 0;
+}
+
+.cta a {
+    display: inline-block;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background: var(--text-color);
+    border-radius: 0.6rem;
+    font-weight: 700;
+    border: 0.35rem solid;
+    margin: 44px 0px 0px 125px;
+
+}
